@@ -57,7 +57,15 @@ def get_filename_recursion(filepath):
 
 
 def get_excel_data(filename):
-    """取得excel的全部数据，将其保存到一个字典中"""
+    """
+    取得excel的全部数据，将其保存到一个字典中
+
+    Args:
+        filename (str): 想要提取的excel名字
+
+    Returns:
+        dict: 保存了excel的全部数据；格式为=表名：表数据
+    """
     excel_data_dict = {}
     wb = openpyxl.load_workbook(filename)
     print(wb.sheetnames)
