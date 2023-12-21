@@ -9,3 +9,4 @@
 + `get_filename`：取得路径filepath下的所有文件名(不包括子目录下的文件)
 + `get_filename_recursion`：取得路径filepath下的所有文件名(包括子目录下的文件)
 
++ `get_excel_data`：取得excel的全部数据，将其保存到一个字典中
